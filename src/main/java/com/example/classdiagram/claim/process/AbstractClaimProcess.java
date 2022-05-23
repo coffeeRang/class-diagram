@@ -1,6 +1,13 @@
 package com.example.classdiagram.claim.process;
 
+import com.example.classdiagram.claim.common.MonitorService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+
+@Service
 public abstract class AbstractClaimProcess {
+
     public abstract void claimProcess(String type);
     public abstract void completeProcess();
     public void beforeClaim() {

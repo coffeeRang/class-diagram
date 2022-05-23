@@ -1,15 +1,14 @@
 package com.example.classdiagram.claim.process;
 
+import com.example.classdiagram.claim.common.MonitorService;
 import com.example.classdiagram.claim.creator.CancelCreator;
 import com.example.classdiagram.claim.factory.ClaimCreatorFactory;
 import com.example.classdiagram.claim.util.PaymentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-@RequiredArgsConstructor
 @Component
 public class CancelProcess extends AbstractClaimProcess {
-
 
     @Override
     public void claimProcess(String claimType) {

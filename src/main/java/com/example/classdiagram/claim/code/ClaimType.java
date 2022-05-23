@@ -24,7 +24,6 @@ public enum ClaimType {
         public AbstractClaimValidator validator() {
             return new CancelValidator();
         }
-
     };
 //    REFUND("REFUND") {
 //        @Override
