@@ -2,6 +2,7 @@ package com.example.classdiagram.claim;
 
 import com.example.classdiagram.claim.beantest.TempService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
@@ -16,7 +17,7 @@ public class TestCancelProcess {
     @Test
     void testServiceRun() {
         TempService tempService = new TempService();
-        tempService.testService();
+        tempService.process();
 
     }
 }
