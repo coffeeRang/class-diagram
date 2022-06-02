@@ -55,6 +55,9 @@ public class TestGeneric {
 
     }
 
+    /**
+     * 사람을 우리에 담으면 안됩니다..
+     */
     @Test
     void testTypeSafe4() {
         Lion leo = new Lion();
