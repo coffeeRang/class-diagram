@@ -1,18 +1,23 @@
 package com.example.classdiagram.claim.process;
 
-import com.example.classdiagram.claim.common.MonitorService;
-import com.example.classdiagram.claim.creator.CancelCreator;
-import com.example.classdiagram.claim.factory.ClaimCreatorFactory;
-import com.example.classdiagram.claim.util.PaymentService;
-import lombok.RequiredArgsConstructor;
+import com.example.classdiagram.claim.service.CancelService;
+import com.example.classdiagram.util.BeanUtils;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class CancelProcess extends AbstractClaimProcess {
 
+    private CancelService cancelService;
+
+    public CancelProcess() {
+        cancelService = (CancelService) BeanUtils.getBean("cancelService");
+    }
+
+
     @Override
-    public void claimProcess(String claimType) {
+    public void claimProcess(String odNo, long pdSn, long prcSn) {
         System.out.println("취소 프로세스 실행");
+        cancelService.doCancel();
     }
 
     @Override

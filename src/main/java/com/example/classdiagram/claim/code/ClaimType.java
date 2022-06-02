@@ -25,29 +25,6 @@ public enum ClaimType {
             return new CancelValidator();
         }
     };
-//    REFUND("REFUND") {
-//        @Override
-//        public AbstractClaimProcess create() {
-//            return new RefundProcess();
-//        }
-//        @Override
-//        public AbstractDataCreator data() {
-//            return null;
-////            return new RefundCreator();
-//        }
-//
-//    },
-//    RETURN("EXCHANGE") {
-//        @Override
-//        public AbstractClaimProcess create() {
-//            return new ExchangeProcess();
-//        }
-//        @Override
-//        public AbstractDataCreator data() {
-//            return null;
-////            return new ExchangeCreator();
-//        }
-//    };
 
     private String type;
 

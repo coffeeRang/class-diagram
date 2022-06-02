@@ -12,7 +12,7 @@ public class TestClaimController {
         ClaimFactory.create(claimType).beforeClaim();
         ValidationFactory.getValidator(claimType).validate();
         ClaimCreatorFactory.getCreator(claimType).getCreator();
-        ClaimFactory.create(claimType).claimProcess(claimType);
+//        ClaimFactory.create(claimType).claimProcess(claimType);
         ClaimFactory.create(claimType).afterClaim();
     }
 

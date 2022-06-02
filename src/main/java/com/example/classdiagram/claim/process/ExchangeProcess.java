@@ -2,7 +2,7 @@ package com.example.classdiagram.claim.process;
 
 public class ExchangeProcess extends AbstractClaimProcess {
     @Override
-    public void claimProcess(String type) {
+    public void claimProcess(String odNo, long pdSn, long prcSn) {
         System.out.println("run 교환 프로세스 ");
     }
 
